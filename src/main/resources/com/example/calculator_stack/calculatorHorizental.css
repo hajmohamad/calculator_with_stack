@@ -1,0 +1,20 @@
+.button{
+    -fx-background-radius:80px;
+    -fx-pref-width: 60;
+    -fx-pref-height: 60;
+    -fx-background-color: #9a8585;
+    -fx-opacity:0;
+
+}
+.button:hover{
+    -fx-background-color: black;
+    -fx-opacity: 0.4;
+
+
+}
+.button:armed{
+    -fx-background-color: #605656;
+
+    -fx-opacity: 0.5;
+
+}

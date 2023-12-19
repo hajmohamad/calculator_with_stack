@@ -1,0 +1,101 @@
+.button{
+    -fx-background-radius:80px;
+-fx-pref-width: 60;
+    -fx-pref-height: 60;
+    -fx-background-color: #9a8585;
+    -fx-opacity:0;
+
+}
+.button:hover{
+    -fx-background-color: black;
+    -fx-opacity: 0.4;
+
+
+}
+.button:armed{
+    -fx-background-color: #605656;
+
+    -fx-opacity: 0.5;
+
+}
+
+#btn_bracet1{
+    -fx-background-color: #A5A5A5 !important;
+    -fx-opacity: 0.9;
+    -fx-background-radius:80px;
+    -fx-pref-width: 60;
+    -fx-pref-height: 60;
+
+}
+
+#btn_bracet1:hover{
+    -fx-opacity: 0.3;
+
+
+}
+
+#btn_bracet1:armed{
+
+    -fx-opacity: 0.3;
+
+}
+#btn_dot{
+    -fx-background-color: #A5A5A5 !important;
+    -fx-opacity: 1;
+    -fx-background-radius:80px;
+    -fx-pref-width: 60;
+    -fx-pref-height:58;
+
+}
+
+#btn_dot:hover{
+    -fx-background-color: #3a3232 !important;
+    -fx-opacity: 0.4;
+
+
+}
+
+#btn_dot:armed{
+
+    -fx-opacity: 0.3;
+
+}
+#btn_bracet2{
+    -fx-background-color: #A5A5A5 !important;
+    -fx-opacity: 0.9;
+    -fx-background-radius:80px;
+    -fx-pref-width: 60;
+    -fx-pref-height: 60;
+
+}
+
+#btn_bracet2:hover{
+    -fx-opacity: 0.3 ;
+
+
+}
+
+#btn_bracet2:armed{
+
+    -fx-opacity: 0.3 ;
+
+}
+#btn_ac{
+    -fx-background-color: #333333 !important;
+    -fx-opacity: 0.9;
+    -fx-background-radius:80px;
+    -fx-pref-width: 60;
+    -fx-pref-height: 60;
+
+}
+
+#btn_ac:hover{
+    -fx-opacity: 0.3  ;
+
+
+}
+
+#btn_ac:armed{
+    -fx-opacity: 0.3;
+
+}
