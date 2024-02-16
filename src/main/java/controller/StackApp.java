@@ -5,7 +5,6 @@ import model.LinkedListStack;
 
 import java.util.ArrayList;
 import java.util.Objects;
-import java.util.Scanner;
 import java.util.Stack;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -14,7 +13,7 @@ import java.util.regex.Pattern;
 
 public class StackApp {
    static ArrayList<String> history ;
-    public static void print(LinkedListStack<String> str){
+    public static void makeHistory(LinkedListStack<String> str){
         String a;
         String b;
         String c;
@@ -48,34 +47,34 @@ history.add(str.pop());
                         result=x + y;
                         st.push(result);
                        copy= stackNumber.copy(String.valueOf(result));
-                       print(copy);
+                       makeHistory(copy);
                         break;
                     case "-":
                         result=x - y;
                         st.push(result);
                         copy= stackNumber.copy(String.valueOf(result));
-                        print(copy);
+                        makeHistory(copy);
 
                         break;
                     case "*":
                         result=x * y;
                         st.push(result);
                         copy= stackNumber.copy(String.valueOf(result));
-                        print(copy);
+                        makeHistory(copy);
 
                         break;
                     case "/":
                         result=x/ y;
                         st.push(result);
                         copy= stackNumber.copy(String.valueOf(result));
-                        print(copy);
+                        makeHistory(copy);
 
                         break;
                     case "^":
                         result=Math.pow(x, y);
                         st.push(result);
                         copy= stackNumber.copy(String.valueOf(result));
-                        print(copy);
+                        makeHistory(copy);
 
                         break;
 
@@ -100,10 +99,13 @@ history.add(str.pop());
 
         for (String c : StringList) {
 
+
             if (!c .equals("+")  && !c .equals("-")  &&!c .equals("*")  &&!c .equals("/") && !c .equals("(")  && !c .equals(")")  && !c .equals("^") && !c .equals('^') ) {
                 postfixStack.push(c);
             } else if (c.equals("(")) {
                 st.push(c);
+                //5 2-3+
+                //
             } else if (c.equals(")")) {
                 while (!st.isEmpty()) {
                     String t = st.pop();
@@ -158,6 +160,7 @@ history.add(str.pop());
         }
     }
     public static Boolean  checkBracket(String str){
+        //(())))
         int BracketCounter=0;
         for (int i=0;i<str.length();i++){
             if(str.charAt(i)=='('){
@@ -202,6 +205,10 @@ history.add(str.pop());
         return result;
     }
     public static String findAnswer(String order) throws Exception {
+        //4+2*6-3
+        //42+6*3-
+
+
 
         double result = 0;
         if((!checkBracket(order))){
@@ -226,6 +233,9 @@ history.add(str.pop());
 
         }
         return String.valueOf(result);}
+    public static void main(String[] args) throws Exception {
+        System.out.println(findAnswer("(5+2-3)"));
+    }
 
 
     }

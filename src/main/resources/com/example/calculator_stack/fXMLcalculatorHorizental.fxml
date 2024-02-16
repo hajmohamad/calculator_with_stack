@@ -10,7 +10,6 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="319.0" prefWidth="650.0" style="-fx-background-color: none; -fx-background-radius: 20px;" stylesheets="@calculatorHorizental.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.calculatorControllerHorizental">
@@ -136,7 +135,7 @@
       <Button fx:id="btn_rnd" layoutX="321.0" layoutY="243.0" maxHeight="45.0" maxWidth="55.0" mnemonicParsing="false" onAction="#act_rand" prefHeight="43.0" />
       <Button fx:id="btn_equls" layoutX="399.0" layoutY="266.0" maxHeight="45.0" maxWidth="55.0" mnemonicParsing="false" onAction="#act_equls" prefHeight="43.0" />
       <Button fx:id="btn_0" layoutX="376.0" layoutY="243.0" maxHeight="45.0" minWidth="100.0" mnemonicParsing="false" onAction="#act_0" />
-      <Label alignment="CENTER" layoutX="39.0" layoutY="246.0" prefHeight="41.0" prefWidth="127.0" style="-fx-background-color: #212121; -fx-background-radius: 23px;" text="Digram" textFill="#eee5e5">
+      <Label alignment="CENTER" layoutX="39.0" layoutY="246.0" prefHeight="41.0" prefWidth="266.0" style="-fx-background-color: #212121; -fx-background-radius: 23px;" text="Digram" textFill="#eee5e5">
          <font>
             <Font size="22.0" />
          </font>
@@ -144,16 +143,7 @@
             <Insets left="4.0" />
          </opaqueInsets>
       </Label>
-      <Button fx:id="btn_digram" layoutX="39.0" layoutY="244.0" maxHeight="45.0" minWidth="127.0" mnemonicParsing="false" onAction="#act_diagramAnchor" prefHeight="45.0" prefWidth="127.0" text="Button" />
-      <Label alignment="CENTER" layoutX="176.0" layoutY="246.0" prefHeight="41.0" prefWidth="127.0" style="-fx-background-color: #212121; -fx-background-radius: 23px;" text="new operator" textFill="#eee5e5">
-         <font>
-            <Font size="18.0" />
-         </font>
-         <opaqueInsets>
-            <Insets left="4.0" />
-         </opaqueInsets>
-      </Label>
-      <Button fx:id="btn_newOprotor" layoutX="176.0" layoutY="244.0" maxHeight="45.0" minWidth="127.0" mnemonicParsing="false" onAction="#act_newOprator" prefHeight="45.0" prefWidth="127.0" text="Button" />
+      <Button fx:id="btn_digram" layoutX="39.0" layoutY="244.0" maxHeight="45.0" minWidth="266.0" mnemonicParsing="false" onAction="#act_diagramAnchor" prefWidth="240.0" text="Button" />
       <Label fx:id="lbl_sum1" layoutX="42.0" layoutY="16.0" prefHeight="41.0" prefWidth="576.0" style="-fx-background-color: #C5C5C5; -fx-background-radius: 25px;" />
       <Label fx:id="lbl_sum" layoutX="60.0" layoutY="16.0" prefHeight="41.0" prefWidth="544.0" style="-fx-background-color: #C5C5C5; -fx-background-radius: 25px;" />
       <Label layoutX="33.0" layoutY="70.0" prefHeight="174.0" prefWidth="285.0" style="-fx-background-color: #C5C5C5; -fx-background-radius: 30px;" />
@@ -190,25 +180,5 @@
          </children>
       </AnchorPane>
       <Button fx:id="btn_equls" layoutX="533.0" layoutY="244.0" maxHeight="45.0" maxWidth="55.0" mnemonicParsing="false" onAction="#act_equls" prefHeight="42.0" prefWidth="54.0" />
-      <AnchorPane layoutX="33.0" layoutY="16.0" prefHeight="277.0" prefWidth="586.0" style="-fx-background-color: black;" visible="false">
-         <children>
-            <Label fx:id="lbl_btnCalculator1" alignment="CENTER" layoutX="36.0" layoutY="208.0" prefHeight="41.0" prefWidth="266.0" style="-fx-background-color: #212121; -fx-background-radius: 23px;" text="CALULATOR" textFill="#eee5e5">
-               <font>
-                  <Font size="22.0" />
-               </font>
-               <opaqueInsets>
-                  <Insets left="4.0" />
-               </opaqueInsets>
-            </Label>
-            <Button fx:id="btn_digram11" layoutX="36.0" layoutY="204.0" maxHeight="45.0" minWidth="266.0" mnemonicParsing="false" onAction="#act_calculatorAnchor" prefWidth="266.0" style="-fx-background-color: #212121;" />
-            <TextField layoutX="23.0" layoutY="21.0" prefHeight="43.0" prefWidth="366.0" style="-fx-background-color: gray; -fx-background-radius: 30px;" />
-            <Label alignment="CENTER" layoutX="412.0" layoutY="21.0" prefHeight="41.0" prefWidth="90.0" style="-fx-background-color: gray; -fx-background-radius: 20px;" text="save">
-               <font>
-                  <Font size="29.0" />
-               </font>
-            </Label>
-            <VBox layoutX="52.0" layoutY="71.0" prefHeight="127.0" prefWidth="233.0" />
-         </children>
-      </AnchorPane>
    </children>
 </AnchorPane>

@@ -293,67 +293,37 @@ public class calculatorControllerHorizental {
     @FXML
     void act_equls(ActionEvent event) {
         try {
-            StringBuilder order = new StringBuilder(lbl_sum.getText());
-            while (order.toString().contains("e")) {
+            StringBuilder order= new StringBuilder(lbl_sum.getText());
+            while (order.toString().contains("e")){
 
-                order.replace(order.toString().indexOf("e"), order.toString().indexOf("e") + 1, "2.191647");
+                order.replace(order.toString().indexOf("e"),order.toString().indexOf("e")+1,"2.191647");
 
 
             }
-            while (order.toString().contains("π")) {
+            while (order.toString().contains("π")){
 
-                order.replace(order.toString().indexOf("π"), order.toString().indexOf("π") + 1, "3.1415192");
+                order.replace(order.toString().indexOf("π"),order.toString().indexOf("π")+1,"3.141592");
             }
 
             lbl_sum.setText(StackApp.findAnswer(order.toString()));
-            if (!lbl_sum.getText().equals("0.0")) {
-                String history = "";
-                for (int i = 0; i < StackApp.history.size(); i++) {
-                    history = history + StackApp.history.get(i) + "\n";
-                }
-                lbl_history.setFont(new Font(15));
-
-                lbl_history.setText(history);
+            String history="" ;
+            for(int i=0;i<StackApp.history.size();i++){
+                history=history+StackApp.history.get(i)+"\n";
             }
+            lbl_history.setFont(new Font(15));
+
+            lbl_history.setText(history);
 
 
-        } catch (Exception ex) {
-            if (ex.getMessage().equals("خطا: " + ":(" + "پرانتز گذاری نامعتبر ")) {
+        }catch (Exception ex){
+            if(ex.getMessage().equals("خطا: " +":("+"پرانتز گذاری نامعتبر ")){
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setTitle("پرنتاز نداریم");
                 alert.setHeaderText(null);
-                alert.setContentText("خطا: " + ":(" + "پرانتز گذاری نامعتبر ");
-                alert.showAndWait();
-            }
+                alert.setContentText("خطا: " +":("+"پرانتز گذاری نامعتبر ");
+                alert.showAndWait();}
 
         }
     }
-
-    @FXML
-    private Button btn_digram11;
-
-    @FXML
-    private Button btn_newOprotor;
-
-
-    @FXML
-    private Label lbl_btnCalculator1;
-
-
-
-
-    @FXML
-    private Label lbl_sum1;
-
-
-    @FXML
-    void act_newOprator(ActionEvent event) {
-
-    }
-
-
-
-
-
 
 }
