@@ -2,7 +2,7 @@
 
 This project is a Java implementation of a calculator that can handle arithmetic expressions in infix, postfix, and prefix notation. It utilizes a stack data structure and JavaFX for the graphical user interface.
 <p align="center">
-  <img src="https://github.com/hajmohamad/stack-hajmohamad/blob/main/calculator_stack/trailler.gif" alt="Calculator demo" width="50%">
+  <img src="https://github.com/hajmohamad/calculator_with_stack/blob/master/trailler.gif" alt="Calculator demo" width="50%">
 </p>
 
 
